@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+/* Меню навигации*/
+.header {
+  background: #222222;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 19px;
+}
+.item-1 {
+  margin-right: 41px;
+}
+.item-3 {
+  margin-left: auto;
+  margin-right: 33px;
+}
+.item-4 {
+  margin-right: 33px;
+}
+.item-5 {
+  position: relative;
+}
+.item-5 span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: white;
+  background: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -8px;
+  top: -5px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/*Изображение и название*/
+.brand {
+  background: #f1e4e6;
+  min-height: 363px;
+  display: flex;
+  align-items: center;
+}
+.logobrand {
+  padding-left: 65px;
+}
+.logo {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.man {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Категории одежды*/
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 30px;
+}
+.category img {
+  object-fit: cover;
+  width: 100%;
+}
+.luxirous img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.category > div {
+  position: relative;
+}
+.category p {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  top: 90px;
+  width: 100%;
+}
+.category span {
+  color: #f16d7f;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.luxirous p {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  top: 60px;
+  width: 100%;
+  align-items: center;
+}
+.luxirous p span {
+  color: #f16d7f;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.luxirous {
+  position: relative;
+  max-height: 180px;
+  min-height: 111px;
+}
+
+/*Адаптив*/
+
+@media (max-width: 667px) {
+  .item-4 {
+    display: none;
+  }
+  .item-5 {
+    display: none;
+  }
+  .item-3 {
+    margin-right: 0px;
+  }
+  .man {
+    display: none;
+  }
+  .category {
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 30px 16px;
+  }
+  .category div p {
+    top: 100px;
+  }
+  .logobrand {
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .luxirous p {
+    top: 30px;
+  }
+  .luxirous img {
+    min-height: 111px;
+  }
+  .luxirous {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .category {
+    margin-top: 20px;
+    column-gap: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+  }
+  .category p {
+    top: 58px;
+  }
+  .logobrand {
+    padding-left: 39px;
+  }
+  .luxirous {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .luxirous p {
+    top: 30px;
+  }
+
+}
